@@ -5,9 +5,9 @@ import sys
 import os
 from datetime import datetime
 
-# Add path to import scraper_modules (adjust if your file structure differs)
-# From board/pages.py, path to scraper_modules is ../scraper_modules
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'scraper_modules'))
+# Add path to import scraping_module (adjust if your file structure differs)
+# From board/pages.py, path to scraping_module ../scraping_module
+# sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'scraping_module'))
 
 from scraping_module.scraper import scrape_notices  # Import from scraper_modules
 from scraping_module.data_processor import process_for_json, process_for_json_filter
